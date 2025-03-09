@@ -1,3 +1,46 @@
 site_name: CCZ-wiki
 theme:
-  name: 'material'
+  name: material
+  features:
+    - navigation.tabs        # 启用标签式导航
+    - navigation.sections    # 显示章节导航
+    - navigation.expand     # 展开导航
+    - navigation.indexes    # 章节索引页
+  palette:
+  # 亮色主题
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: 切换至暗色模式
+
+  # 暗色主题
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: 切换至亮色模式
+
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - cczmod作品:
+    - 吕布传 : mod_archieve/lvbu.md
+    - 刘备传: todo.md
+  - cczmod制作: 
+    - 各类文件分析: mod_make/files_ana.md
+  - 基础能力:
+    - 汇编: basic_skill/asm.md
+  - 历史的遗迹: history/history.md
+  - 资源下载: res_download.md
+
+plugins:
+    - search: {}
+    - encryptcontent:
+        password_inventory:
+          classified: 'lometsj'

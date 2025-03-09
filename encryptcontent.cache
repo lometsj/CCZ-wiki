@@ -1,0 +1,5 @@
+kdf_iterations: 10000
+obfuscate: {}
+password:
+  lometsj: 7f4c13066fa547a5dfdff7307f779439f2caea9012827576f0202341f2a5ada7;38c5f7cbaefbff41b2554a10a7718315;f2de59ecb5be71cdd8a7221ca27b107b8d569cfdb533170f7b49c1cde84e8048
+userpass: {}
